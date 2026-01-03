@@ -24,3 +24,20 @@ enum Status {
 }
 
 let status: Status = Status.Success;
+
+// 2. Interfaces and Types
+
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
+type Point = {
+  x: number;
+  y: number;
+};
+
+function printUser(user: User) {
+  console.log(`User name: ${user.name}`);
+}
